@@ -1,0 +1,64 @@
+<html>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+}
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a:link, a:visited {
+              background-color: #f44336;
+              color: white;
+              padding: 15px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border-radius: 50px;
+        }
+        a:hover, a:active {
+              background-color: rgb(142, 218, 42);
+        }
+    </style>
+<body>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+    
+    {%if data == 0%}
+    <h1 style="color: coral;">Diabetes Negative</h1>
+    <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Happy_Emoji_Icon_5c9b7b25-b215-4457-922d-fef519a08b06_large.png?v=1571606090" width="100px" height="100px"> <br><br><br>
+
+    {%else%}
+    <h1 style="color: rgb(54, 238, 115);">Diabetes Positive</h1>
+    <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Very_sad_emoji_icon_png_grande.png?v=1571606089" width="100px" height="100px"><br><br><br>
+    {%endif%}
+
+    <a href='/' >Back</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+
